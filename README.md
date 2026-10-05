@@ -2,6 +2,8 @@
 
 Repository: https://github.com/MikeOh-SQ/elephant-perspectiveshift-data
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23156290.svg)](https://doi.org/10.5281/zenodo.23156290)
+
 English–Korean model judgment data derived from ELEPHANT AITA-NTA-FLIP, covering 1,591 original/flip pairs and four models: GPT, Jev, Gemini, and Claude.
 
 This is a **data-only deposit bundle**. It contains no manuscript, poster, research conclusions, figures, software, credentials, or cache databases. It is an independent dataset derived from ELEPHANT, not an official ELEPHANT release.
@@ -12,7 +14,7 @@ This is a **data-only deposit bundle**. It contains no manuscript, poster, resea
 - `data/additional_repeats.jsonl`: 3,200 additional observations (100 fixed cases × 4 conditions × 2 repeats × 4 models). Combine with the initial observations by key to obtain three repetitions on the selected cases.
 - `data/gemini_retry_adjusted_responses.jsonl`: 7,164 cumulative effective Gemini observations after authorized retries; a separate supplementary overlay, **not 7,164 new independent observations**. Do not concatenate with primary/repeat Gemini rows.
 - Other data files record case correspondence, provisional quality and translation review status, historical labels, input hashes, and the fixed repeat sample.
-- `metadata/`: source provenance, model settings, frozen-version metadata, inventory, and a draft deposit description.
+- `metadata/`: source provenance, model settings, frozen-version metadata, inventory, and deposit metadata.
 
 See [DATA_DICTIONARY.md](DATA_DICTIONARY.md), [README_KO.md](README_KO.md), [RIGHTS.md](RIGHTS.md), and [DOI_DEPOSIT_KO.md](DOI_DEPOSIT_KO.md). `CHECKSUMS.sha256` identifies the exact files in this bundle.
 
@@ -38,4 +40,4 @@ Suggested citation:
 
 Oh, K. (2026). *ELEPHANT PerspectiveShift Data: English–Korean model judgments on AITA-NTA-FLIP* (Version 1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23156290
 
-DOI reserved by the creator; Zenodo publication has not yet been confirmed. The citation is prepared for the forthcoming deposit.
+Published on Zenodo on **2026-10-05**: [dataset record](https://zenodo.org/records/23156290). The deposited ZIP is the archival snapshot. Subsequent GitHub documentation updates do not alter its contents.

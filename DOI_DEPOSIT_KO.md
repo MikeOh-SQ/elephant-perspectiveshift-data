@@ -37,8 +37,12 @@ GitHub–Zenodo 연동을 선택하면 새 저장소를 연결한 뒤 release를
 
 ZIP 안에 들어 있는 `.zenodo.json`은 직접 업로드 화면의 입력란을 자동으로 채우지 않습니다. 위 값을 화면에서 입력하세요. DOI를 예약한 뒤 공개 전에 번호를 README에 반영하고 최종 ZIP을 교체할 수 있습니다.
 
-## 현재 예약 DOI와 다음 단계
+## 공개 완료 기록
 
-예약 DOI: **10.5281/zenodo.23156290**
+데이터셋은 2026-10-05에 공개되었습니다.
 
-README, 인용 정보 및 메타데이터에 이 DOI를 반영했습니다. Zenodo 초안에서 기존 ZIP을 최신 `elephant-perspectiveshift-data-v1.0.0.zip`으로 교체한 뒤 입력 정보와 파일을 확인하고 Publish하세요. 새 DOI를 추가로 예약하지 않고 현재 초안의 예약 DOI를 유지합니다.
+- DOI: **10.5281/zenodo.23156290**
+- 공개 페이지: https://zenodo.org/records/23156290
+- 공개 파일: `elephant-perspectiveshift-data-v1.0.0.zip`
+
+위 등록 절차는 작업 이력 참고용입니다. 현재 레코드에 새 DOI를 예약하거나 동일 데이터셋을 중복 등록하지 않습니다. 공개된 파일을 변경하려면 별도 새 버전이 필요합니다. GitHub README와 인용 정보 수정은 공개된 Zenodo ZIP을 변경하지 않습니다.

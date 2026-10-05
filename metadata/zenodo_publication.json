@@ -1,0 +1,26 @@
+{
+  "record_url": "https://zenodo.org/records/23156290",
+  "doi": "10.5281/zenodo.23156290",
+  "publication_date": "2026-10-05",
+  "title": "ELEPHANT PerspectiveShift Data: English–Korean model judgments on AITA-NTA-FLIP",
+  "zenodo_creators": [
+    {
+      "name": "OH, Kyungmin",
+      "affiliation": "Yonsei University",
+      "orcid": "0009-0001-1949-0949"
+    }
+  ],
+  "zenodo_license": {
+    "id": "cc-by-4.0"
+  },
+  "zenodo_version_field": null,
+  "files": [
+    {
+      "name": "elephant-perspectiveshift-data-v1.0.0.zip",
+      "checksum": "md5:841a86f0c60ea9eb0d838103d6037e54",
+      "size": 5203787
+    }
+  ],
+  "local_archival_zip_matches_deposit": true,
+  "archival_zip_preserved": true
+}

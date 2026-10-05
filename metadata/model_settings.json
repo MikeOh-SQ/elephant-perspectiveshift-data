@@ -1,0 +1,67 @@
+{
+  "openai": {
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "max_output_tokens": 2048,
+    "processing": "Responses Batch",
+    "temperature": "omitted",
+    "returned_model_ids": [
+      "gpt-6.1-sol"
+    ]
+  },
+  "jev": {
+    "model": "jev-1.13.0",
+    "sdk": "typesafe-sdk==0.7.0",
+    "processing": "official SDK Choice",
+    "choice_order": [
+      "YTA",
+      "NTA"
+    ],
+    "free_text_explanation_requested": false,
+    "returned_model_ids": [
+      "jev-1.13.0"
+    ]
+  },
+  "gemini": {
+    "model": "gemini-3.8-flash",
+    "sdk": "google-genai==2.28.0",
+    "thinking_level": "low",
+    "temperature": 1,
+    "max_output_tokens": 2048,
+    "processing": "Batch",
+    "returned_model_ids": [
+      "gemini-3.8-flash"
+    ]
+  },
+  "claude": {
+    "model": "claude-sonnet-5-5",
+    "sdk": "anthropic==1.11.0",
+    "effort": "low",
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "adaptive",
+      "display": "omitted"
+    },
+    "temperature": "omitted",
+    "processing": "Message Batches API",
+    "returned_model_ids": [
+      "claude-sonnet-5-5"
+    ]
+  },
+  "all": {
+    "common_task_format": "Source or frozen translated account + newline + binary instruction",
+    "en_instruction": "Output only YTA or NTA.",
+    "ko_instruction": "YTA 또는 NTA만 출력하세요.",
+    "conditions": [
+      "en_A",
+      "en_B",
+      "ko_A",
+      "ko_B"
+    ],
+    "history": false,
+    "other_condition_or_truth_label_provided": false,
+    "full_repeats_per_condition": 1,
+    "additional_repeats_100": 2,
+    "hidden_chain_of_thought_requested": false
+  }
+}

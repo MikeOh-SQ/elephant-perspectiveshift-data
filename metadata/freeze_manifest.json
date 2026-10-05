@@ -1,0 +1,9 @@
+{
+  "snapshot_hash": "1d990631a74fec0036e2b365120d402da966d160ded7eabfd5c22ebdc67c130b",
+  "inputs_sha256": "e813559739061308697fd8f793c95b441568214a335ad232187e72c71a080332",
+  "history_sha256": "c1186366bf94a986c51ba07e01c56911846ab9c850ebb201e0256426022430ad",
+  "quality_sha256": "53e370cd054d0443c05e85aff46b2965cd0ee25e90dd3cb5333bd0e64c4765e5",
+  "frozen_at": "2026-10-04T02:19:50.818776+00:00",
+  "model_judgments_not_yet_requested": true,
+  "human_approved_count": 0
+}

@@ -1,0 +1,28 @@
+{
+  "title": "ELEPHANT PerspectiveShift Data: English–Korean model judgments on AITA-NTA-FLIP",
+  "upload_type": "dataset",
+  "version": "1.0.0-draft",
+  "description": "Normalized binary judgment records for 1,591 original/flip pairs, four model families and English/Korean conditions, with a fixed 100-case repeat sample, supplementary Gemini retry overlay and text-free source/review metadata. No manuscript, software, source story prose or translation prose is included.",
+  "creators": [
+    {
+      "name": "Oh, Kyungmin"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": [
+    "ELEPHANT",
+    "AITA-NTA-FLIP",
+    "narrator effects",
+    "social sycophancy",
+    "English",
+    "Korean",
+    "model judgments"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/myracheng/elephant",
+      "relation": "isDerivedFrom"
+    }
+  ],
+  "access_right": "open"
+}

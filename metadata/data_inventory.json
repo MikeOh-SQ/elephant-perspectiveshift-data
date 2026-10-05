@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0-draft",
+  "resource_type": "dataset",
+  "case_pairs": 1591,
+  "conditions_per_case": 4,
+  "primary_and_additional_unique_observations": 28656,
+  "response_files": {
+    "primary_responses.jsonl": {
+      "rows": 25456,
+      "models": {
+        "openai_batch": 6364,
+        "jev@jev-1.13.0": 6364,
+        "gemini_batch@gemini-3.8-flash": 6364,
+        "claude_batch@claude-sonnet-5-5": 6364
+      },
+      "status_counts": {
+        "ok": 25119,
+        "parse_error": 326,
+        "refusal": 11
+      }
+    },
+    "additional_repeats.jsonl": {
+      "rows": 3200,
+      "models": {
+        "openai_batch": 800,
+        "jev@jev-1.13.0": 800,
+        "gemini_batch@gemini-3.8-flash": 800,
+        "claude_batch@claude-sonnet-5-5": 800
+      },
+      "status_counts": {
+        "ok": 3168,
+        "parse_error": 32
+      }
+    },
+    "gemini_retry_adjusted_responses.jsonl": {
+      "rows": 7164,
+      "models": {
+        "gemini_batch@gemini-3.8-flash": 7164
+      },
+      "status_counts": {
+        "ok": 7133,
+        "parse_error": 20,
+        "refusal": 11
+      }
+    }
+  },
+  "gemini_retry_overlay_is_separate": true,
+  "contains_manuscript": false,
+  "contains_code": false,
+  "contains_source_or_translation_prose": false
+}

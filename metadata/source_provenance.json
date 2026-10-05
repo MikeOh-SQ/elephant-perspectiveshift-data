@@ -1,0 +1,13 @@
+{
+  "downloaded_at": "2026-10-02T05:07:27.439145+00:00",
+  "last_verified_at": "2026-10-02T05:18:01.513434+00:00",
+  "source": "https://osf.io/r3dmj/?view_only=37ee66a8020a45c29a38bd704ca61067",
+  "download_url": "https://osf.io/download/4chzv/?view_only=37ee66a8020a45c29a38bd704ca61067",
+  "osf_version": 1,
+  "osf_modified_at": "2025-09-27T22:48:23.630967",
+  "sha256": "859dc4f5f3a8486c09184918e67728d6a233ed55e7e5a0bede383bacc87c8122",
+  "size": 6651747,
+  "git_commit": "61f7044fc0e11defc971dfaa9bc84d7340fa88eb",
+  "repository_license": "CC0-1.0; no separate OSF dataset license located; underlying third-party rights not inferred",
+  "download_time_basis": "mtime of initial archive write; metadata recorded during subsequent verification"
+}

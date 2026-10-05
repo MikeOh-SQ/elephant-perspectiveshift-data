@@ -1,0 +1,24 @@
+# 데이터셋 DOI 등록 안내
+
+권장 방식은 이 데이터 폴더의 ZIP을 **Zenodo에 직접 데이터셋으로 등록**하고, 새 GitHub 저장소는 동일 자료의 탐색·다운로드 창구로 사용하는 것입니다. 논문을 공개할 필요는 없습니다. GitHub 저장소 주소 자체가 DOI는 아닙니다.
+
+1. 저자 **Kyungmin Oh**, 이용허락 **CC BY 4.0**을 메타데이터에 반영했습니다. Zenodo 이름 필드는 `Oh, Kyungmin`(성, 이름)으로 기록했습니다. 소속/ORCID는 제공되지 않아 생략했습니다. `.zenodo.json`과 `metadata/deposit_metadata_draft.json`에 같은 정보를 넣었습니다. 최종 공개 버전과 공개 시점을 정합니다. 데이터 저장소: https://github.com/MikeOh-SQ/elephant-perspectiveshift-data.
+2. 데이터 전용 GitHub 저장소는 `MikeOh-SQ/elephant-perspectiveshift-data`입니다. 현재 비공개 설정을 유지했습니다. 이 폴더의 파일만 사용합니다. 기존 연구 저장소의 `.git`이나 이력을 복사하지 않습니다. 기존 비공개 저장소의 논문·소스는 옮기지 않습니다.
+3. Zenodo에서 새 업로드를 만들고 자료 유형을 **Dataset**으로 선택합니다. ZIP, 제목, 설명, 저자, 버전과 이용 조건을 입력합니다.
+4. DOI 항목에서 기존 DOI가 없음을 선택하고 **Get a DOI now!**로 DOI를 예약할 수 있습니다. 예약과 공개·등록 완료는 서로 다릅니다. 예약한 DOI를 논문 및 데이터 인용에 사용할 수 있도록 기록합니다.
+5. 예약 DOI와 새 저장소 주소를 자료 설명에 반영한 최종 파일로 교체하고 체크섬도 갱신합니다. 내용과 공개 범위를 확인한 뒤 Zenodo에서 Publish합니다. 공개된 데이터셋의 버전 DOI를 논문에 인용합니다.
+6. 새 GitHub README에 해당 데이터 DOI 링크를 추가합니다. GitHub와 Zenodo에 같은 데이터 버전을 제공하고, 수정은 새 버전으로 구분합니다.
+
+## 인용 서식
+
+`Oh, K. ([공개 연도]). ELEPHANT PerspectiveShift Data: English–Korean model judgments on AITA-NTA-FLIP (Version 1.0.0) [Data set]. Zenodo. https://doi.org/[실제 발급 DOI]`
+
+위 문구는 서식 예시입니다. 아직 발급받지 않은 DOI나 확정되지 않은 공개 연도를 실제 인용으로 사용하지 않습니다. 발표 논문 DOI와 데이터 DOI는 별개입니다.
+
+## 공식 안내
+
+- DOI 예약: https://help.zenodo.org/docs/deposit/describe-records/reserve-doi/
+- 업로드: https://help.zenodo.org/docs/get-started/quickstart/
+- GitHub 연동(선택 사항): https://help.zenodo.org/docs/github/
+
+GitHub–Zenodo 연동을 선택하면 새 저장소를 연결한 뒤 release를 보관하는 방법도 있습니다. 자료 유형을 데이터셋으로 명시하고, 자동 등록 전에 저자·이용 조건 등 메타데이터를 완성해야 합니다. 직접 데이터셋 등록 방식이면 GitHub 연동은 필수가 아닙니다.

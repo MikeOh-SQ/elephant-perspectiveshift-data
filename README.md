@@ -31,7 +31,7 @@ Automatic review is provisional and does not certify human approval. The supplem
 | Field | Value |
 |---|---|
 | Creator | Kyungmin Oh |
-| Affiliation | 연세대학교 심리과학이노베이션 대학원 |
+| Affiliation | Graduate School of Innovative Psychological Science, Yonsei University |
 | Version | 1.0.0 |
 | License | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); scope in [RIGHTS.md](RIGHTS.md) |
 | DOI | [10.5281/zenodo.23156290](https://doi.org/10.5281/zenodo.23156290) |

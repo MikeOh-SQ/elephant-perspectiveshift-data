@@ -28,4 +28,10 @@ A/B는 각각 원본/화자 전환 조건의 이름입니다. 실제 인물 대�
 
 저자는 **Kyungmin Oh**(소속: **연세대학교 심리과학이노베이션 대학원**), 버전은 **1.0.0**, 이용허락은 **CC BY 4.0(출처표시)**으로 지정했습니다. 출처와 라이선스를 밝히고 변경 사항을 표시하면 재배포·수정·상업적 이용이 가능합니다. 원자료에서 가져온 자료의 권리는 `RIGHTS.md`에 구분했습니다.
 
-이 저장소는 DOI 등록 전 데이터 정리본입니다. 현재 GitHub 저장소는 비공개이며, Zenodo에는 아직 등록하지 않았습니다. DOI도 아직 없습니다. `DOI_DEPOSIT_KO.md`의 절차로 데이터셋을 등록하세요. 논문은 기존 비공개 저장소와 로컬 작업 폴더에 보관하면 됩니다.
+이 저장소는 DOI 등록 전 데이터 정리본입니다. 현재 GitHub 저장소는 비공개이며, Zenodo DOI **[10.5281/zenodo.23150009](https://doi.org/10.5281/zenodo.23150009)**를 예약했습니다. Zenodo 공개 완료는 아직 확인하지 않았습니다. `DOI_DEPOSIT_KO.md`의 절차로 데이터셋을 등록하세요. 논문은 기존 비공개 저장소와 로컬 작업 폴더에 보관하면 됩니다.
+
+## 데이터셋 인용
+
+Oh, K. (2026). *ELEPHANT PerspectiveShift Data: English–Korean model judgments on AITA-NTA-FLIP* (Version 1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23150009
+
+위 인용은 예약 DOI에 맞춰 준비한 것으로, 공개 완료를 뜻하지 않습니다.

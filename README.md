@@ -32,6 +32,10 @@ Automatic review is provisional and does not certify human approval. The supplem
 | Affiliation | 연세대학교 심리과학이노베이션 대학원 |
 | Version | 1.0.0 |
 | License | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); scope in [RIGHTS.md](RIGHTS.md) |
-| DOI | Pending Zenodo registration |
+| DOI | [10.5281/zenodo.23150009](https://doi.org/10.5281/zenodo.23150009) |
 
-When a DOI is issued, the citation and DOI link will be added here.
+Suggested citation:
+
+Oh, K. (2026). *ELEPHANT PerspectiveShift Data: English–Korean model judgments on AITA-NTA-FLIP* (Version 1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23150009
+
+DOI reserved by the creator; Zenodo publication has not yet been confirmed. The citation is prepared for the forthcoming deposit.

@@ -25,5 +25,6 @@
       "relation": "isDerivedFrom"
     }
   ],
-  "access_right": "open"
+  "access_right": "open",
+  "doi": "10.5281/zenodo.23150009"
 }

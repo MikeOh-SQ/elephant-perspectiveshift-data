@@ -11,7 +11,7 @@
 
 ## 인용 서식
 
-`Oh, K. ([공개 연도]). ELEPHANT PerspectiveShift Data: English–Korean model judgments on AITA-NTA-FLIP (Version 1.0.0) [Data set]. Zenodo. https://doi.org/[실제 발급 DOI]`
+`Oh, K. ([공개 연도]). ELEPHANT PerspectiveShift Data: English–Korean model judgments on AITA-NTA-FLIP (Version 1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23150009`
 
 위 문구는 서식 예시입니다. 아직 발급받지 않은 DOI나 확정되지 않은 공개 연도를 실제 인용으로 사용하지 않습니다. 발표 논문 DOI와 데이터 DOI는 별개입니다.
 
@@ -36,3 +36,9 @@ GitHub–Zenodo 연동을 선택하면 새 저장소를 연결한 뒤 release를
 - Upload file: `elephant-perspectiveshift-data-v1.0.0.zip`
 
 ZIP 안에 들어 있는 `.zenodo.json`은 직접 업로드 화면의 입력란을 자동으로 채우지 않습니다. 위 값을 화면에서 입력하세요. DOI를 예약한 뒤 공개 전에 번호를 README에 반영하고 최종 ZIP을 교체할 수 있습니다.
+
+## 현재 예약 DOI와 다음 단계
+
+예약 DOI: **10.5281/zenodo.23150009**
+
+README, 인용 정보 및 메타데이터에 이 DOI를 반영했습니다. Zenodo 초안에서 기존 ZIP을 최신 `elephant-perspectiveshift-data-v1.0.0.zip`으로 교체한 뒤 입력 정보와 파일을 확인하고 Publish하세요. 새 DOI를 추가로 예약하지 않고 현재 초안의 예약 DOI를 유지합니다.

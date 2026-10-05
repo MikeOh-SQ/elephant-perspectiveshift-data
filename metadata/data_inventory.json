@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-draft",
+  "version": "1.0.0",
   "resource_type": "dataset",
   "case_pairs": 1591,
   "conditions_per_case": 4,

@@ -24,6 +24,14 @@ Model outputs are normalized records, not complete provider payloads or long res
 
 Automatic review is provisional and does not certify human approval. The supplementary retries are distinguishable from the initial evaluation. One initial response per condition cannot fully separate stochastic generation variability from condition effects.
 
-## Citation and DOI
+## Citation
 
-Creator: **Kyungmin Oh**. License: **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** for project contributions as described in `RIGHTS.md`. Version: **1.0.0-draft**. No DOI has been reserved or minted. Affiliations and ORCIDs are omitted because they have not been supplied. `.zenodo.json` records the selected author, dataset type and license; `metadata/deposit_metadata_draft.json` contains the same metadata. Update the final version before the Zenodo release. Cite the released dataset DOI in the eventual paper; the manuscript need not be deposited with this dataset.
+| Field | Value |
+|---|---|
+| Creator | Kyungmin Oh |
+| Affiliation | 연세대학교 심리과학이노베이션 대학원 |
+| Version | 1.0.0 |
+| License | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); scope in [RIGHTS.md](RIGHTS.md) |
+| DOI | Pending Zenodo registration |
+
+When a DOI is issued, the citation and DOI link will be added here.

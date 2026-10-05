@@ -13,7 +13,7 @@
   "zenodo_license": {
     "id": "cc-by-4.0"
   },
-  "zenodo_version_field": null,
+  "zenodo_version_field": "1.0.0",
   "files": [
     {
       "name": "elephant-perspectiveshift-data-v1.0.0.zip",
@@ -22,5 +22,6 @@
     }
   ],
   "local_archival_zip_matches_deposit": true,
-  "archival_zip_preserved": true
+  "archival_zip_preserved": true,
+  "zenodo_updated_at": "2026-10-05T08:26:14.517255+00:00"
 }

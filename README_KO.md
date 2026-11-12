@@ -17,6 +17,6 @@ ELEPHANT AITA-NTA-FLIP의 원본·화자 전환본 1,591개 사건을 영어·�
 
 ## DOI와 버전
 
-기존 Zenodo **v1.0.0**의 DOI는 [10.5281/zenodo.23156290](https://doi.org/10.5281/zenodo.23156290)입니다. GitHub의 새 v1.1.0 데이터에 대한 Zenodo DOI는 아직 발급되지 않았으며, 기존 DOI를 새 버전 DOI로 표시하지 않습니다. 기존 기록에서 `New version`으로 별도 게시한 후 새 DOI를 반영해야 합니다.
+Zenodo **v1.1.0**의 DOI는 [10.5281/zenodo.24152943](https://doi.org/10.5281/zenodo.24152943)입니다. 기존 **v1.0.0** DOI [10.5281/zenodo.23156290](https://doi.org/10.5281/zenodo.23156290)도 유지됩니다. 새 Zenodo ZIP과 GitHub v1.1.0 태그에서 만든 ZIP의 MD5가 일치합니다. DOI 발급 전에 고정된 GitHub 태그와 Zenodo ZIP 안의 안내문은 당시 상태를 담고 있으며 변경하지 않았습니다.
 
 파일 무결성 검사는 저장소 루트에서 `sha256sum -c CHECKSUMS.sha256`을 실행합니다.

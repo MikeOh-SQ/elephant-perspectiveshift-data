@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite the exact GitHub release used. A Zenodo DOI for v1.1.0 has not yet been issued."
+message: "Please cite the archived dataset version using its Zenodo DOI."
 type: dataset
 title: "ELEPHANT PerspectiveShift Data: English–Korean model judgments on AITA-NTA-FLIP"
 authors:
@@ -9,3 +9,5 @@ authors:
     orcid: "https://orcid.org/0009-0001-1949-0949"
 version: 1.1.0
 url: "https://github.com/MikeOh-SQ/elephant-perspectiveshift-data/releases/tag/v1.1.0"
+doi: 10.5281/zenodo.24152943
+date-released: 2026-11-12

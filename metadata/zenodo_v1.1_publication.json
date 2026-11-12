@@ -1,0 +1,18 @@
+{
+  "record_url": "https://zenodo.org/records/24152943",
+  "doi": "10.5281/zenodo.24152943",
+  "concept_doi": "10.5281/zenodo.23156289",
+  "version": "1.1.0",
+  "publication_date": "2026-11-12",
+  "title": "ELEPHANT PerspectiveShift Data: English–Korean model judgments on AITA-NTA-FLIP",
+  "files": [
+    {
+      "name": "elephant-perspectiveshift-data-v1.1.0.zip",
+      "checksum": "md5:232c7b8db55eec55e8332a3b74079ad8",
+      "size": 7826255
+    }
+  ],
+  "github_tag": "v1.1.0",
+  "github_commit": "42f9dd807aec21df6b9f35e399f30b6fd6ab74f6",
+  "local_archival_zip_md5_matches_deposit": true
+}

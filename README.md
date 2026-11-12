@@ -1,5 +1,7 @@
 # ELEPHANT PerspectiveShift Data
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24152943.svg)](https://doi.org/10.5281/zenodo.24152943)
+
 Data-only release **v1.1.0**: normalized English–Korean model judgments for 1,591 original/flip pairs from ELEPHANT AITA-NTA-FLIP. This is an independent replication and extension, not an official ELEPHANT release.
 
 Seven model versions are included: GPT-6.1 Sol; Jev 1.13.0 and 1.14.0; Gemini 3.8 Flash and 4 Argon; and Claude Sonnet 5.5 and Fable 5.2. **EXAONE is not included** because that evaluation was still in progress when this version was prepared.
@@ -32,9 +34,10 @@ The release excludes EXAONE, original English narratives, Korean translation pro
 Creator: Kyungmin Oh, Graduate School of Innovative Psychological Science, Yonsei University; ORCID 0009-0001-1949-0949.
 
 - GitHub v1.1.0: https://github.com/MikeOh-SQ/elephant-perspectiveshift-data/releases/tag/v1.1.0
+- Zenodo v1.1.0: https://doi.org/10.5281/zenodo.24152943
 - Previous Zenodo v1.0.0: https://doi.org/10.5281/zenodo.23156290
 - Zenodo concept DOI for the existing deposit: https://doi.org/10.5281/zenodo.23156289
 
-**A Zenodo DOI for v1.1.0 has not been issued.** The previous version DOI identifies v1.0.0 only. A new version must be deposited and published separately. GitHub v1.1.0 should be cited via its release URL until a corresponding new Zenodo record is published. `metadata/zenodo_publication.json` describes the historical v1.0.0 deposit only.
+Version 1.1.0 is published on Zenodo as [10.5281/zenodo.24152943](https://doi.org/10.5281/zenodo.24152943). Its deposited ZIP has the same MD5 checksum as the ZIP built from the GitHub v1.1.0 tag. The previous DOI identifies v1.0.0 only. `metadata/zenodo_publication.json` describes the historical v1.0.0 deposit; `metadata/zenodo_v1.1_publication.json` describes v1.1.0. The GitHub tag and deposited ZIP retain the text as it was before the new DOI was issued.
 
 Verify the bundle from the repository root with `sha256sum -c CHECKSUMS.sha256`.

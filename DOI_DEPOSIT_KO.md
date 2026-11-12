@@ -1,7 +1,10 @@
-# Zenodo 새 버전 등록 안내
+# Zenodo 데이터 버전 기록
 
-이 저장소의 v1.1.0은 GitHub에 공개하는 데이터 버전입니다. 기존 Zenodo DOI [10.5281/zenodo.23156290](https://doi.org/10.5281/zenodo.23156290)은 v1.0.0에 해당하며, v1.1.0의 DOI가 아닙니다. v1.1.0의 Zenodo 새 버전은 아직 만들지 않았습니다.
+Zenodo v1.1.0은 2026년 11월 12일에 공개됐습니다.
 
-기존 Zenodo 기록에 소유자로 로그인하고 **New version**을 선택해 버전 1.1.0의 데이터와 메타데이터를 검토·등록하면 기존 레코드와 연결된 새 버전 DOI를 받을 수 있습니다. 새 버전 공개 전 기존 버전의 파일을 자동으로 포함한다고 가정하지 말고 실제 파일 목록을 확인하세요. 이전 v1.0.0 기록과 DOI는 보존합니다.
+- 새 버전 DOI: https://doi.org/10.5281/zenodo.24152943
+- 이전 v1.0.0 DOI: https://doi.org/10.5281/zenodo.23156290
+- 전체 버전 개념 DOI: https://doi.org/10.5281/zenodo.23156289
+- GitHub 태그: https://github.com/MikeOh-SQ/elephant-perspectiveshift-data/releases/tag/v1.1.0
 
-[Zenodo 새 버전 안내](https://help.zenodo.org/docs/deposit/manage-versions/)
+Zenodo에 등록된 ZIP과 GitHub v1.1.0 태그에서 만든 로컬 ZIP의 MD5 체크섬이 `232c7b8db55eec55e8332a3b74079ad8`로 일치합니다. DOI 발급 전에 고정된 ZIP과 태그의 안내문은 당시 상태를 보존합니다. 현재 README와 인용 파일은 발급된 DOI를 반영합니다.

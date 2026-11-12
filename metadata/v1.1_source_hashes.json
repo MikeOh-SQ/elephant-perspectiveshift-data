@@ -1,0 +1,9 @@
+{
+  "sha256": {
+    "jev_latest_full/responses.jsonl": "df405cc20a3fd0bfbe5d018e13ac4fa80a5d81bf6ce2978798cff7bc4a6b2553",
+    "gemini_argon_full/responses.jsonl": "b18816532cb62ed8baf819e01d7a62cffde53a584d0dc001c97d18a96711de95",
+    "claude_fable_full/responses.jsonl": "2ed8da929afca9c119dd650d164128cae7b75393207dcbe18bea9204e3d64af3",
+    "gemini_argon_supplement/responses.jsonl": "7623f1461199e694f561c7f74b97f3a547f09ac4e65b96377bf6168a63ec3001"
+  },
+  "description": "Local raw response files, not redistributed"
+}

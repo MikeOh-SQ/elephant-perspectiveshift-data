@@ -1,35 +1,41 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "resource_type": "dataset",
   "case_pairs": 1591,
   "conditions_per_case": 4,
-  "primary_and_additional_unique_observations": 28656,
+  "primary_and_additional_unique_observations": 50148,
   "response_files": {
     "primary_responses.jsonl": {
-      "rows": 25456,
+      "rows": 44548,
       "models": {
         "openai_batch": 6364,
         "jev@jev-1.13.0": 6364,
         "gemini_batch@gemini-3.8-flash": 6364,
-        "claude_batch@claude-sonnet-5-5": 6364
+        "claude_batch@claude-sonnet-5-5": 6364,
+        "jev@jev-1.14.0": 6364,
+        "gemini_batch@gemini-4-argon": 6364,
+        "claude_batch@claude-fable-5-2": 6364
       },
       "status_counts": {
-        "ok": 25119,
-        "parse_error": 326,
-        "refusal": 11
+        "ok": 42939,
+        "parse_error": 1587,
+        "refusal": 22
       }
     },
     "additional_repeats.jsonl": {
-      "rows": 3200,
+      "rows": 5600,
       "models": {
         "openai_batch": 800,
         "jev@jev-1.13.0": 800,
         "gemini_batch@gemini-3.8-flash": 800,
-        "claude_batch@claude-sonnet-5-5": 800
+        "claude_batch@claude-sonnet-5-5": 800,
+        "jev@jev-1.14.0": 800,
+        "gemini_batch@gemini-4-argon": 800,
+        "claude_batch@claude-fable-5-2": 800
       },
       "status_counts": {
-        "ok": 3168,
-        "parse_error": 32
+        "ok": 5412,
+        "parse_error": 188
       }
     },
     "gemini_retry_adjusted_responses.jsonl": {
@@ -42,9 +48,21 @@
         "parse_error": 20,
         "refusal": 11
       }
+    },
+    "gemini_argon_structured_followup.jsonl": {
+      "rows": 1365,
+      "models": {
+        "gemini_batch@gemini-4-argon": 1365
+      },
+      "status_counts": {
+        "ok": 699,
+        "uncertain": 666
+      }
     }
   },
   "gemini_retry_overlay_is_separate": true,
+  "argon_structured_followup_is_separate": true,
+  "exaone_included": false,
   "contains_manuscript": false,
   "contains_code": false,
   "contains_source_or_translation_prose": false

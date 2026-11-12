@@ -43,3 +43,9 @@ Inspect `metadata/data_inventory.json` for file-specific counts and literal stat
 | historical_labels.csv | Parsed historical model labels joined to the exact original English accounts; comparison metadata, not moral truth labels |
 
 `metadata/source_provenance.json` records the upstream OSF archive, version/date/hash and source repository license findings. `metadata/freeze_manifest.json` records frozen inputs. `metadata/model_settings.json` describes the actual binary prompts and executed settings. Automatic clear/revised status does not imply researcher approval.
+
+## Gemini 4 Argon structured follow-up
+
+`gemini_argon_structured_followup.jsonl` contains 1,365 separately generated follow-up observations, selected only from the original Argon format errors. `original_input_key` connects each row to its original main/repeat request; `input_key` identifies the separate follow-up request. The follow-up requested a JSON `verdict` with `YTA`, `NTA`, or `UNCERTAIN`, adding an uncertainty option to the original instructions. `status=uncertain` means the follow-up selected `UNCERTAIN`, with null binary verdict; it is neither an API error nor an original binary judgment. `status=ok` is a valid YTA/NTA follow-up judgment. Refusals in the original run were not retried. The follow-up is a selected sample with a changed output condition: do not overwrite or combine it with the primary sample as independent observations. The JSON follow-up does not use legacy `paper_is_*` flags.
+
+Version 1.1.0 adds three complete model versions to the existing four. `metadata/v1.1_source_hashes.json` records hashes of the private local source files, which are not themselves redistributed. EXAONE is excluded.

@@ -1,37 +1,22 @@
-# ELEPHANT PerspectiveShift 데이터
+# ELEPHANT PerspectiveShift 데이터 v1.1.0
 
-저장소: https://github.com/MikeOh-SQ/elephant-perspectiveshift-data
+ELEPHANT AITA-NTA-FLIP의 원본·화자 전환본 1,591개 사건을 영어·한국어와 일곱 모델 버전에서 평가한 독립 확장 연구의 데이터 전용 공개본입니다. **EXAONE은 실험 진행 중이므로 포함하지 않았습니다.**
 
-논문에서 인용할 **데이터셋 DOI** 등록을 위해 분리한 자료입니다. 논문·포스터·그림·분석 결론·코드는 포함하지 않습니다. 기존 비공개 연구 저장소와 별개로 사용할 수 있습니다.
+## 데이터 구성
 
-## 수록 범위
+| 파일 | 행 수 | 설명 |
+| --- | ---: | --- |
+| `data/primary_responses.jsonl` | 44,548 | 일곱 모델의 본 평가 최초 응답 |
+| `data/additional_repeats.jsonl` | 5,600 | 같은 100개 사건의 추가 반복 |
+| `data/gemini_retry_adjusted_responses.jsonl` | 7,164 | 기존 Gemini 3.8의 재시도 반영 보충 데이터 |
+| `data/gemini_argon_structured_followup.jsonl` | 1,365 | Gemini 4 Argon 최초 형식 오류에 대한 별도 구조화 출력 재평가 |
 
-| 자료 | 수록 내용 |
-|---|---|
-| 본 평가 | 1,591쌍 × 영어/한국어 × 원본/전환본 × 4모델 = 25,456개 최초 응답 레코드 |
-| 추가 반복평가 | 고정 100개 사건에 조건당 2회 추가, 4모델 합계 3,200개 |
-| Gemini 재시도 보충 자료 | 재시도 결과를 반영한 누적 7,164개 레코드; 본 평가와 별도 |
-| 대응·검토 자료 | 사건 ID, 잠정 인물/사실 대응 상태, 번역 검토 상태·해시, 고정 표본 |
-| 재사용에 필요한 메타데이터 | 모델 설정·질문·버전, 원자료 출처·다운로드 날짜·해시 |
+본 평가와 추가 반복은 총 **50,148건**입니다. 두 Gemini 보충 파일은 원래 응답과 겹치거나 같은 입력을 다시 평가한 것으로, 본 평가에 독립 관측치로 합산하지 않습니다. Argon 보충 실험은 JSON 형식과 판단 유보 선택지가 추가된 별도 조건이며, YTA/NTA 699건과 `uncertain` 666건으로 기록됐습니다.
 
-모델은 실제 실행 기록의 GPT `gpt-6.1-sol`, Jev `jev-1.13.0`, Gemini `gemini-3.8-flash`, Claude `claude-sonnet-5-5`입니다. 정확한 설정은 `metadata/model_settings.json`에 있습니다.
+원문과 한국어 번역 본문, 긴 답변, 원시 API 페이로드, 키, EXAONE 미완료 자료는 포함하지 않습니다. 번역과 원문 대조는 같은 요청 모델을 쓰는 별도 Codex 자동 세션으로 진행됐으며 사람의 전수 검토를 의미하지 않습니다. 원 연구의 사람·사실 대응도 자동 검토의 잠정 결과입니다. 자세한 설명은 [데이터 사전](DATA_DICTIONARY.md), [권리 안내](RIGHTS.md), [영문 안내](README.md)를 참고하세요.
 
-A/B는 각각 원본/화자 전환 조건의 이름입니다. 실제 인물 대응이 모두 확정되었다는 뜻이 아닙니다. YTA/NTA는 해당 화자 기준의 판단이며 정답 라벨이 아닙니다. 실패 응답을 NTA로 처리하지 않습니다. 자동 검토를 사람의 승인으로 표시하지 않습니다.
+## DOI와 버전
 
-영어 원문·한국어 번역 전문·긴 응답 설명은 재배포하지 않습니다. 이 자료는 **판단 레코드 데이터셋**이며, 한국어 번역 텍스트 데이터셋 자체는 아닙니다. 원자료 출처와 텍스트 해시는 제공하지만 모든 실험 입력을 이 폴더만으로 재구성할 수는 없습니다.
+기존 Zenodo **v1.0.0**의 DOI는 [10.5281/zenodo.23156290](https://doi.org/10.5281/zenodo.23156290)입니다. GitHub의 새 v1.1.0 데이터에 대한 Zenodo DOI는 아직 발급되지 않았으며, 기존 DOI를 새 버전 DOI로 표시하지 않습니다. 기존 기록에서 `New version`으로 별도 게시한 후 새 DOI를 반영해야 합니다.
 
-`DATA_DICTIONARY.md`에 파일과 주요 필드 설명이 있습니다. Gemini 보충 자료는 최초 응답과 중복되는 관측을 포함하므로 합쳐서 표본 수를 늘리지 않습니다.
-
-## 공개·인용 준비
-
-제안 새 저장소 이름: **elephant-perspectiveshift-data**.
-
-저자는 **Kyungmin Oh**(소속: **연세대학교 심리과학이노베이션 대학원**), 버전은 **1.0.0**, 이용허락은 **CC BY 4.0(출처표시)**으로 지정했습니다. 출처와 라이선스를 밝히고 변경 사항을 표시하면 재배포·수정·상업적 이용이 가능합니다. 원자료에서 가져온 자료의 권리는 `RIGHTS.md`에 구분했습니다.
-
-데이터셋은 **2026-10-05에 [Zenodo에 공개](https://zenodo.org/records/23156290)**했습니다. DOI: **[10.5281/zenodo.23156290](https://doi.org/10.5281/zenodo.23156290)**. GitHub 저장소와 Zenodo 데이터셋 모두 공개되어 있습니다. 보관용 데이터 ZIP은 Zenodo에서 받을 수 있습니다. 논문은 이 데이터셋에 포함하지 않았습니다.
-
-## 데이터셋 인용
-
-Oh, K. (2026). *ELEPHANT PerspectiveShift Data: English–Korean model judgments on AITA-NTA-FLIP* (Version 1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23156290
-
-Zenodo에 공개된 ZIP은 보관용 스냅샷입니다. 이후 GitHub 설명 수정은 이미 공개된 ZIP의 내용을 바꾸지 않습니다.
+파일 무결성 검사는 저장소 루트에서 `sha256sum -c CHECKSUMS.sha256`을 실행합니다.

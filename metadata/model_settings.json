@@ -63,5 +63,50 @@
     "full_repeats_per_condition": 1,
     "additional_repeats_100": 2,
     "hidden_chain_of_thought_requested": false
+  },
+  "jev_1_14": {
+    "model": "jev-1.14.0",
+    "processing": "official SDK Choice",
+    "choice_order": [
+      "YTA",
+      "NTA"
+    ],
+    "returned_model_ids": [
+      "jev-1.14.0"
+    ]
+  },
+  "gemini_argon": {
+    "model": "gemini-4-argon",
+    "sdk": "google-genai==2.28.0",
+    "thinking_level": "low",
+    "temperature": 1,
+    "max_output_tokens": 2048,
+    "processing": "Batch",
+    "returned_model_ids": [
+      "gemini-4-argon"
+    ]
+  },
+  "claude_fable": {
+    "model": "claude-fable-5-2",
+    "sdk": "anthropic==1.11.0",
+    "effort": "low",
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "adaptive",
+      "display": "omitted"
+    },
+    "temperature": "omitted",
+    "processing": "Message Batches API",
+    "returned_model_ids": [
+      "claude-fable-5-2"
+    ]
+  },
+  "gemini_argon_structured_followup": {
+    "source": "format errors only from original Argon baseline and repeats",
+    "output": "JSON verdict YTA/NTA/UNCERTAIN",
+    "choice_set_changed": true,
+    "processing": "Batch",
+    "use_as_original": false,
+    "refusals_retried": false
   }
 }

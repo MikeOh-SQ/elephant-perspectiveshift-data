@@ -1,43 +1,40 @@
 # ELEPHANT PerspectiveShift Data
 
-Repository: https://github.com/MikeOh-SQ/elephant-perspectiveshift-data
+Data-only release **v1.1.0**: normalized English–Korean model judgments for 1,591 original/flip pairs from ELEPHANT AITA-NTA-FLIP. This is an independent replication and extension, not an official ELEPHANT release.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23156290.svg)](https://doi.org/10.5281/zenodo.23156290)
+Seven model versions are included: GPT-6.1 Sol; Jev 1.13.0 and 1.14.0; Gemini 3.8 Flash and 4 Argon; and Claude Sonnet 5.5 and Fable 5.2. **EXAONE is not included** because that evaluation was still in progress when this version was prepared.
 
-English–Korean model judgment data derived from ELEPHANT AITA-NTA-FLIP, covering 1,591 original/flip pairs and four models: GPT, Jev, Gemini, and Claude.
+## Files and counts
 
-This is a **data-only deposit bundle**. It contains no manuscript, poster, research conclusions, figures, software, credentials, or cache databases. It is an independent dataset derived from ELEPHANT, not an official ELEPHANT release.
+| File | Records | Meaning |
+| --- | ---: | --- |
+| `data/primary_responses.jsonl` | 44,548 | First evaluation: 1,591 cases × four conditions × seven models. |
+| `data/additional_repeats.jsonl` | 5,600 | Two extra repetitions for each condition of the same 100 cases for each model. |
+| `data/gemini_retry_adjusted_responses.jsonl` | 7,164 | Prior Gemini 3.8 retry-adjusted overlay; overlaps original and repeat records. |
+| `data/gemini_argon_structured_followup.jsonl` | 1,365 | Gemini 4 Argon follow-up on prior format errors only, with a changed prompt and JSON YTA/NTA/UNCERTAIN schema. |
 
-## Contents
+The primary and additional-repeat files contain **50,148 unique observations**. Both Gemini follow-up files are separate supplementary records; do not add them to the original observations as independent main-study samples. The Argon follow-up has 699 `ok` YTA/NTA decisions and 666 `uncertain` decisions; no original refusal was retried in that follow-up. The old Gemini 3.8 overlay is unchanged from v1.0.0.
 
-- `data/primary_responses.jsonl`: 25,456 initial observations (1,591 cases × 4 conditions × 4 models).
-- `data/additional_repeats.jsonl`: 3,200 additional observations (100 fixed cases × 4 conditions × 2 repeats × 4 models). Combine with the initial observations by key to obtain three repetitions on the selected cases.
-- `data/gemini_retry_adjusted_responses.jsonl`: 7,164 cumulative effective Gemini observations after authorized retries; a separate supplementary overlay, **not 7,164 new independent observations**. Do not concatenate with primary/repeat Gemini rows.
-- Other data files record case correspondence, provisional quality and translation review status, historical labels, input hashes, and the fixed repeat sample.
-- `metadata/`: source provenance, model settings, frozen-version metadata, inventory, and deposit metadata.
+Other files contain historical English labels, non-text case and review metadata, hashes and the fixed repeat sample. See [DATA_DICTIONARY.md](DATA_DICTIONARY.md), [README_KO.md](README_KO.md), [RIGHTS.md](RIGHTS.md) and [metadata/data_inventory.json](metadata/data_inventory.json).
 
-See [DATA_DICTIONARY.md](DATA_DICTIONARY.md), [README_KO.md](README_KO.md), [RIGHTS.md](RIGHTS.md), and [DOI_DEPOSIT_KO.md](DOI_DEPOSIT_KO.md). `CHECKSUMS.sha256` identifies the exact files in this bundle.
+## Interpretation
 
-## Interpretation and boundaries
+The four conditions are English/Korean × original/flip. `speaker=A` and `speaker=B` are narrative-condition identifiers and do not certify that all events or persons are perfectly equivalent across accounts. YTA/NTA are judgments about the narrator, not moral ground truth. Refusals, format errors and incomplete results must not be converted into valid verdicts. `uncertain` in the Argon follow-up is a permitted response to its changed three-option schema, not an original binary judgment.
 
-Conditions are English/Korean × original/flip. `speaker=A` means original account and `speaker=B` means flipped account; those names are condition identifiers and do not certify person/fact correspondence. YTA/NTA are narrator-relative binary judgments, not verified moral truth labels. Failed, refused, incomplete, and unclassifiable outputs retain their status with a null category. No accuracy against humans is asserted.
+Translation and source-review records reflect separate automated Codex sessions using the same requested model. They are not independent human approval. Different models, versions, output formats, processing settings and failure rates limit direct comparisons. This deposit does not establish Korean training data amounts, moral accuracy, user experience, or causal explanations for language differences.
 
-Model outputs are normalized records, not complete provider payloads or long response explanations. Original English prose and frozen Korean translation prose are not redistributed here. Their hashes, versions, and review metadata are included. Consequently this deposit supports reuse of recorded judgments and linkage, but is not a text corpus from which the exact four-condition inputs can all be reconstructed.
+## Privacy, scope and rights
 
-Automatic review is provisional and does not certify human approval. The supplementary retries are distinguishable from the initial evaluation. One initial response per condition cannot fully separate stochastic generation variability from condition effects.
+The release excludes EXAONE, original English narratives, Korean translation prose, long free-text answers, full provider payloads, credentials, caches, manuscripts and software. It is a data-only release, so these files alone do not reconstruct all exact model prompts. Input hashes and review metadata are included. Project contributions are distributed under CC BY 4.0, subject to the limits in [RIGHTS.md](RIGHTS.md); upstream and third-party material retains its own rights.
 
-## Citation
+## Citation and version history
 
-| Field | Value |
-|---|---|
-| Creator | Kyungmin Oh |
-| Affiliation | Graduate School of Innovative Psychological Science, Yonsei University |
-| Version | 1.0.0 |
-| License | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); scope in [RIGHTS.md](RIGHTS.md) |
-| DOI | [10.5281/zenodo.23156290](https://doi.org/10.5281/zenodo.23156290) |
+Creator: Kyungmin Oh, Graduate School of Innovative Psychological Science, Yonsei University; ORCID 0009-0001-1949-0949.
 
-Suggested citation:
+- GitHub v1.1.0: https://github.com/MikeOh-SQ/elephant-perspectiveshift-data/releases/tag/v1.1.0
+- Previous Zenodo v1.0.0: https://doi.org/10.5281/zenodo.23156290
+- Zenodo concept DOI for the existing deposit: https://doi.org/10.5281/zenodo.23156289
 
-Oh, K. (2026). *ELEPHANT PerspectiveShift Data: English–Korean model judgments on AITA-NTA-FLIP* (Version 1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23156290
+**A Zenodo DOI for v1.1.0 has not been issued.** The previous version DOI identifies v1.0.0 only. A new version must be deposited and published separately. GitHub v1.1.0 should be cited via its release URL until a corresponding new Zenodo record is published. `metadata/zenodo_publication.json` describes the historical v1.0.0 deposit only.
 
-Published on Zenodo on **2026-10-05**: [dataset record](https://zenodo.org/records/23156290). The deposited ZIP is the archival snapshot. Subsequent GitHub documentation updates do not alter its contents.
+Verify the bundle from the repository root with `sha256sum -c CHECKSUMS.sha256`.
